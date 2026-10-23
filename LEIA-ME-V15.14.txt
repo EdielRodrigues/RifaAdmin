@@ -1,0 +1,11 @@
+RIFA ADMIN V15.14 — ATUALIZAÇÃO DO PAINEL
+
+- Programa de indicações e resumo geral preservados.
+- Atualização do cache PWA para evitar versão antiga.
+- Nova seção informativa de Pix automático (ainda não operacional).
+- Fluxo atual de aprovação manual de pagamentos preservado.
+- Não há backend Render nem webhook neste pacote. NÃO use o painel como prova de pagamento.
+- Nunca coloque MP_ACCESS_TOKEN, Firebase Private Key ou credenciais secretas no GitHub Pages.
+- Para integrar com o cliente, use o mesmo projeto Firebase e as regras adequadas.
+- CPF não substitui autenticação. Reveja as regras e a privacidade antes da produção.
+- Criação de novo admin requer Firebase Authentication e autorização explícita no banco.

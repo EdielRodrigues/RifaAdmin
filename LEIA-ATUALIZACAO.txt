@@ -1,0 +1,1 @@
+Substitua arquivos do GitHub Rifa-Admin pelos do ZIP. Painel atualizado para status Pix e Render. Atenção: regras Firebase ainda abertas, mantenha vendas suspensas.

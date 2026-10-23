@@ -1,0 +1,3 @@
+E-mail preferencial de login: diel_zi_nho25@hotmail.com
+
+IMPORTANTE: O HTML apenas preenche o e-mail na tela de login. Para trocar o e-mail de uma conta existente, altere-o no Firebase Authentication (ou em Perfil no painel com autenticação recente). Para criar outro administrador, cadastre o novo e-mail no Authentication e autorize seu UID no Realtime Database em /admins/UID = true. Não publique senha no GitHub.
