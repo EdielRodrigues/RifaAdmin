@@ -239,12 +239,12 @@
       <p class="texto-apoio">Status das reservas e pagamentos atualizado em tempo real pelo Firebase. Pix automático não pode ser confirmado ou excluído manualmente no painel. Comissões exigem validação e processamento seguro no servidor.</p>
     </div></details>
   </section>
-  <section id="painel" class="card oculto"><div class="cabecalho-card"><div><h2>Reservas</h2><p id="contadorReservas"></p></div><div class="acoes-topo-admin"><button id="btnExcluirCanceladas" class="botao excluir-suave">🔒 Excluir canceladas</button><button id="btnExcluirReservadas" class="botao excluir-alerta">🔒 Excluir reservadas</button><button id="btnExcluirConfirmadas" class="botao excluir-perigo">🔒 Excluir confirmadas</button></div></div><label>Pesquisar<input id="pesquisa" placeholder="Nome, telefone, CPF, código ou número"></label><div id="listaReservas"></div></section>
+  <section id="painel" class="card oculto"><div class="cabecalho-card"><div><h2>Reservas</h2><p id="contadorReservas"></p></div><div class="acoes-topo-admin"><button id="btnExcluirCanceladas" class="botao excluir-suave">🔒 Excluir canceladas</button><button id="btnExcluirReservadas" class="botao excluir-alerta">🔒 Excluir reservadas</button><button id="btnExcluirConfirmadas" class="botao excluir-perigo">🔒 Excluir confirmadas</button></div></div><button id="btnHistoricoExclusoes" class="botao secundario" type="button">📋 Histórico de exclusões</button><div id="historicoExclusoes" class="oculto" style="margin:14px 0;padding:12px;border:1px solid #8995a3;border-radius:12px"><div class="cabecalho-card"><h3>Histórico de exclusões</h3><button id="btnFecharHistoricoExclusoes" class="botao secundario" type="button">Fechar</button></div><label>Pesquisar no histórico<input id="pesquisaHistoricoExclusoes" placeholder="Reserva, número, pagamento, administrador"></label><p id="contadorHistoricoExclusoes" class="texto-apoio"></p><div id="listaHistoricoExclusoes"></div></div><label>Pesquisar<input id="pesquisa" placeholder="Nome, telefone, CPF, código ou número"></label><div id="listaReservas"></div></section>
 </main>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
 <script src="firebase-config.js?v=15.18"></script>
-<script src="admin.js?v=15.20"></script>
+<script src="admin.js?v=15.21"></script>
 <footer class="rodape-versao"><p>Versão: V15.18 • Pix Render</p><p>Última atualização: 23/10/2026</p></footer>
 </body></html>
