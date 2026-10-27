@@ -1,0 +1,1 @@
+Substitua vencedor.html e vencedor.js nos repositórios Rifa-Cliente e RifaAdmin. A galeria lê rifa/historicoSorteios e rifa/resultadoAtual, em ordem cronológica. Exclusão individual já existe no ADM em Histórico de sorteios. ATENÇÃO: exclusão exclusiva do administrador depende de regras Firebase seguras, não apenas de esconder botões. Faça backup antes de publicar.
