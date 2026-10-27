@@ -191,7 +191,10 @@ function desenharAfiliados(){
     const cp=document.createElement('button');cp.className='botao secundario';cp.textContent='📋 Copiar chave Pix';cp.onclick=()=>copiarTextoSeguro(a.pix,'Chave Pix copiada.');
     const px=document.createElement('button');px.className='botao pix-pagar';px.textContent='💠 Preparar Pix';px.onclick=()=>prepararPixAfiliado(a);
     const pg=document.createElement('button');pg.className='botao confirmar';pg.textContent='✅ Confirmar Pix enviado';pg.onclick=()=>pagarAfiliado(a);
-    row.append(w,cp,px,pg);d.appendChild(row);box.appendChild(d);
+    const auto=document.createElement('button');auto.className='botao payout-bloqueado';auto.type='button';auto.disabled=true;auto.textContent='🏦 Enviar Pix automático — aguardando habilitação';auto.title='API Payouts ainda não habilitada pelo Mercado Pago';
+    const info=document.createElement('div');info.className='payout-pendente-info';
+    info.innerHTML='<strong>🏦 Mercado Pago Payouts</strong><p>Status: aguardando autorização da API para sua conta.</p><p>Destinatário: '+esc(a.nome||'Não informado')+' • Valor: '+moeda(a.saldoDisponivel||0)+'</p><p>A transferência automática não está ativa. Nenhum saldo será movimentado por este botão.</p>';
+    row.append(w,cp,px,pg,auto);d.appendChild(row);d.appendChild(info);box.appendChild(d);
   });
 }
 async function pagarAfiliado(a){
