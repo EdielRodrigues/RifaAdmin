@@ -4,8 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#121212">
-  <title>Painel Administrativo V15.14 da Rifa</title><meta name="theme-color" content="#121212"><link rel="apple-touch-icon" href="icon-192.png">
-  <link rel="manifest" href="manifest.json?v=15.18">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Rifa Admin">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <title>Painel Administrativo da Rifa</title>
+  <link rel="manifest" href="manifest.json?v=instalacao-1">
   <link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
@@ -17,6 +21,11 @@
   </div>
 </header>
 <main class="container">
+  <section id="instalacaoAdmin" class="card instalacao-admin" aria-label="Instalar aplicativo administrativo">
+    <div class="instalacao-cabecalho"><img src="icon-192.png" alt="" width="52" height="52"><div><h2>📲 Instalar painel no celular</h2><p>Adicione o Rifa Admin à tela inicial para abrir como aplicativo.</p></div></div>
+    <button id="btnInstalarAdmin" type="button" class="botao principal">📲 Instalar aplicativo</button>
+    <p id="instalacaoAdminAjuda" class="instalacao-ajuda" aria-live="polite"></p>
+  </section>
   <section class="card" id="acessoBox">
     <div class="abas-acesso">
       <button id="abaLogin" class="aba ativa" type="button">Entrar</button>
@@ -246,5 +255,6 @@
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
 <script src="firebase-config.js?v=15.18"></script>
 <script src="admin.js?v=15.21"></script>
+<script src="instalacao-admin.js?v=1" defer></script>
 <footer class="rodape-versao"><p>Versão: V15.18 • Pix Render</p><p>Última atualização: 23/10/2026</p></footer>
 </body></html>

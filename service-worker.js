@@ -1,5 +1,5 @@
-const CACHE='rifa-admin-v15-20-final';
-const CORE=['./index.html?v=v15-20','./style.css?v=v15-20','./admin.js?v=v15-20','./firebase-config.js?v=v15-20','./sorteio.html?v=v15-20','./sorteio.js?v=v15-20','./manifest.json?v=v15-20','./icon-192.png','./icon-512.png'];
+const CACHE='rifa-admin-instalacao-2026-11-07';
+const CORE=['./index.html?v=v15-20','./style.css?v=v15-20','./admin.js?v=v15-20','./firebase-config.js?v=v15-20','./sorteio.html?v=v15-20','./sorteio.js?v=v15-20','./manifest.json?v=instalacao-1','./instalacao-admin.js?v=1','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',event=>{self.skipWaiting();event.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).catch(()=>{}));});
 self.addEventListener('activate',event=>{event.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim();})());});
 self.addEventListener('message',event=>{if(event.data&&event.data.type==='SKIP_WAITING')self.skipWaiting();});

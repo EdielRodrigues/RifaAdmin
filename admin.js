@@ -510,7 +510,7 @@ let recarregouPorAtualizacao=false;
 async function registrarServiceWorker(){
   if(!('serviceWorker' in navigator))return;
   try{
-    const reg=await navigator.serviceWorker.register('service-worker.js?v=15.14',{updateViaCache:'none'});
+    const reg=await navigator.serviceWorker.register('service-worker.js?v=instalacao-1',{updateViaCache:'none'});
     await reg.update().catch(()=>{});
     navigator.serviceWorker.addEventListener('controllerchange',()=>{
       if(recarregouPorAtualizacao)return;

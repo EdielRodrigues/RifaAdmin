@@ -50,3 +50,6 @@ textarea{width:100%;box-sizing:border-box;border:1px solid #343944;border-radius
 
 /* Payouts: preparação visual, desabilitado até autorização formal e backend seguro */
 .payout-bloqueado{background:#344155!important;color:#e2e8f0!important;opacity:.8;cursor:not-allowed!important;white-space:normal;line-height:1.35}.payout-pendente-info{margin:12px 0 0;padding:13px;border:1px solid #546178;border-radius:14px;background:#1b2532;color:#e5ebf3;font-size:13px;line-height:1.5}.payout-pendente-info p{margin:7px 0 0;color:#c5ceda}
+
+/* Instalação do aplicativo administrativo */
+.instalacao-admin{border-color:#987a2e}.instalacao-cabecalho{display:flex;align-items:center;gap:12px;margin-bottom:14px}.instalacao-cabecalho img{border-radius:13px;flex-shrink:0}.instalacao-cabecalho h2{font-size:1.12rem;margin:0 0 4px}.instalacao-cabecalho p{margin:0;color:#c9ccd3;font-size:.9rem;line-height:1.4}.instalacao-admin .botao{width:100%}.instalacao-admin .botao[hidden]{display:none}.instalacao-ajuda{font-size:.9rem;color:#d8dce5;line-height:1.5;margin:10px 0 0}
