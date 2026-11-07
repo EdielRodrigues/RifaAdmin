@@ -1,1 +1,0 @@
-V15.20: Excluir cancelada disponivel apenas para Pix cancelado. Requer backend V2.8 e usuario autorizado em admins/{uid}=true. Confirmados e pendentes nao podem ser excluidos. Regras Firebase abertas continuam sendo um risco; corrigir antes de vendas reais.
